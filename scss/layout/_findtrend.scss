@@ -1,0 +1,31 @@
+.findtrend-helps {
+    margin: 140px 0;
+  & h3 {
+    font-size: 36px;
+font-weight: 900;
+line-height: 42.77px;
+text-align: left;
+  }
+
+   .an {
+    
+    color: #ADADAD;
+
+  }
+}
+
+
+@include tablet {
+    .findtrend-helps {
+        & h3 {
+  
+font-size: 64px;
+
+line-height: 76.03px;
+text-align: left;
+br {
+    display: none;
+}
+        }
+    }
+}

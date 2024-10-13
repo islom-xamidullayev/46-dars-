@@ -1,0 +1,81 @@
+.platform {
+  background-color: #fafafa;
+  padding: 140px 0;
+
+  h2 {
+    margin-bottom: 80px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42.77px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__card {
+    padding: 15px;
+    background-color: #fff;
+    transition: 1s ease;
+
+    &__tablet {
+      display: none;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__card:hover {
+    background-color: #A8FF35;
+  }
+
+
+  &__info {
+    margin-top: 77px;  
+     img {
+        display: block;
+        margin: auto;
+        padding-top: 40px;
+        width: 100%;
+     }
+  }
+}
+
+@include tablet {
+  .platform {
+    h2 {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 76.03px;
+      text-align: center;
+    }
+
+    &__wrapper {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    &__card {
+      padding: 32px;
+
+      &__tablet {
+        display: block;
+      }
+    }
+
+    &__info {
+        
+        img {
+            width: auto;
+        }
+    }
+  }
+}

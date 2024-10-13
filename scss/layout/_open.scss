@@ -1,0 +1,77 @@
+.open {
+  background: #a8ff35;
+  padding-top: 80px;
+  text-align: center;
+
+  &__topic {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40.32px;
+    text-align: center;
+  }
+
+  &__card {
+    background: #F5F5F5;
+    padding: 24px;
+    border-radius: 14px;
+    max-width: 390px;
+    margin: auto;
+    margin-top: 80px;
+    
+  }
+
+  &__card2 {
+     max-width: 340px;
+     padding: 25px 30px;
+     
+  }
+
+  &__info {
+padding:  80px 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: center;
+color: #000;
+  }
+
+}
+.br3 {
+    display: none;
+}
+
+
+@include tablet {
+.open {
+   
+    &__topic {
+        font-size: 72px;
+font-weight: 700;
+line-height: 85.54px;
+text-align: center;
+
+    }
+
+    &__card {
+      padding: 60px 0;
+      padding-right: 360px;
+      padding-left: 60px;
+      width: 580px;
+    }
+   
+    &__card2 {
+        width: 300px;
+    }
+   
+
+}
+
+.br1, .br2 {
+    display: none;
+}
+
+.br3 {
+   display: block;
+}
+
+}

@@ -1,0 +1,59 @@
+.will-help {
+  margin: 140px 0;
+
+  h2 {
+    margin-bottom: 80px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42.77px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+  }
+
+  &__card {
+    width: 100%;
+    padding: 40px 38px;
+    background-color: #f5f5f5;
+    transition: 1s;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__card:hover {
+    background-color: #A8FF35;
+  }
+}
+
+.will-card {
+  padding: 49px 38px;
+}
+
+@include tablet {
+  .will-help {
+    h2 {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 76.03px;
+      text-align: center;
+    }
+
+    &__wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    &__card {
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
