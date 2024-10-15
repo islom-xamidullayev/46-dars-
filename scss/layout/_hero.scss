@@ -84,8 +84,26 @@
   }
 }
 
+@media (max-width: 1050px)  {
+  .hero {
+    &__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 19px;
+        max-width: 320px;
+        margin: auto;
+        margin-top: 92px;
 
-@media (max-width: 550px) {
+    }
+
+    &__topic {
+        font-size: 36px;
+        line-height: 40.64px;
+    }
+}  
+}
+
+
+@media (max-width: 750px) {
     .hero {
         &__wrapper {
             grid-template-columns: repeat(1, 1fr);
